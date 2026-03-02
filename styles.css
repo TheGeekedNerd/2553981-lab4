@@ -1,0 +1,87 @@
+/* ===========================
+   Spinner Animation
+   =========================== */
+.spinner {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite; /* Required animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===========================
+   Country Card Styling
+   =========================== */
+.country-card {
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.country-card img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ===========================
+   Bordering Countries Grid
+   =========================== */
+.border-grid {
+    display: grid; /* Required */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.border-grid .border-country {
+    background-color: #e8f0fe;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.border-grid img {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* ===========================
+   Error Message Styling
+   =========================== */
+.error {
+    color: #e74c3c; /* Red */
+    background-color: #fdecea;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin: 15px auto;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ===========================
+   Hidden Class
+   =========================== */
+.hidden {
+    display: none;
+}
